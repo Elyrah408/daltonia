@@ -1,5 +1,4 @@
 
-
 let myColorList =[];
 let divArray = [];
 let colorButton = document.getElementById("colorButton3");
