@@ -5,11 +5,7 @@ let divArray = [];
 let colorButton = document.getElementById("colorButton3");
 let colorPicker = document.getElementById("colorPicker");
 
-let myinfo = document.getElementById("infos");
-myinfo.addEventListener("click",()=>{
-    window. location. href ="about.html";
 
-});
 
 let storedBlogs = JSON.parse(localStorage.getItem('homeColorSelection'));
 storedBlogs.forEach(myvalueinput => {
@@ -153,6 +149,8 @@ colorButton.style.backgroundColor="RGB("+rgbvalue+")";
 
   
 });
+
+
 
   let btn_add= document.getElementById("add");
   btn_add.onclick=createNewDiv;
@@ -492,6 +490,8 @@ document.getElementById("copyButton2").addEventListener("click", function () {
 });
 
 
+
+
 document.getElementById("copyButton3").addEventListener("click", function () {
   const textToCopy = document.getElementById("valuedue").textContent;
 
@@ -505,4 +505,8 @@ document.getElementById("copyButton3").addEventListener("click", function () {
 
 
 
- 
+let myinfo2 = document.getElementById("infos");
+myinfo2.addEventListener("click",()=>{
+    window. location. href ="about.html";
+
+});
