@@ -1,0 +1,93 @@
+/*
+ *             ░       ░                             ░    ░   
+ *    .*✶░█▀▄ █ █▀▄▀█ █ ▀█▀ █▀█ █ █░█ █▀ █▀▀ █░█ █▀█ █▀█ █░✶*..
+ *     ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
+ *                                 github:DimitriFromSchool::.
+ *  ────────────────────────────────────────────────────────────
+ *           Project: Daltonia
+ *                      Created: 2024-10-30, 18:29:14 |
+ *                      Updated: 2024-11-24, 00:18:49 | 
+ *  ────────────────────────────────────────────────────────────
+ */
+ 
+:root {
+
+    --sclera-size: 100px;
+    --iris-ratio: 0.85; 
+    --pupil-ratio: 0.60; 
+    --fontfam-one:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    --sclera-color: #ffffff;
+    --iris-color: #ffffff;
+    --pupil-color: #000000;
+    
+    --btn-color: #f6f5f4;
+    --contrasted-color:#171717;
+  }
+
+  #eyeleash{
+    height: 147px;
+    width: 147px;
+    display:flex;
+    top: 108px;
+    left: 0px;
+    position: relative; 
+  }
+  .svglogo {
+    fill: #ffffff;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+  }
+  
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; 
+  top:-130px;
+}
+.eye-container {
+  width: calc(var(--sclera-size) * 1); /* Ajuster la taille du masque ici */
+  height: calc(var(--sclera-size) * 1);
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transform: rotate(45deg);
+  border: solid #000000 5px;
+}
+.eye {
+  width: var(--sclera-size);
+  height: var(--sclera-size);
+  background-color: var(--sclera-color);
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+  
+.iris {
+  width: calc(var(--sclera-size) * var(--iris-ratio));
+  height: calc(var(--sclera-size) * var(--iris-ratio));
+  background-color: var(--iris-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s;
+}
+
+.pupil {
+  width: calc(var(--sclera-size) * var(--iris-ratio) * var(--pupil-ratio));
+  height: calc(var(--sclera-size) * var(--iris-ratio) * var(--pupil-ratio));
+  background-color: var(--pupil-color);
+  border-radius: 50%;
+  display: flex;
+  transition: transform 0.1s;
+}
+

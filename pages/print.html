@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/print.css">
+   <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+    
+
+    <title>Daltonia</title>
+</head>
+<body>
+    
+    <div id="content">
+        <div class="logo">
+          <svg id="svglogo" data-name="Daltonia" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.88 139.61">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                  stroke: #000;
+                  stroke-miterlimit: 10;
+                  stroke-width: 3px;
+                }
+              </style>
+            </defs>
+            <g>
+              <path class="cls-1" d="M166,79.47c-42.93-33.57-97.19-33.57-140.12,0-5.26,4.11-10,8.49-13.83,13.06,3.83,4.57,8.57,8.94,13.83,13.06,42.93,33.57,97.19,33.57,140.12,0,5.26-4.11,10-8.49,13.83-13.06-3.83-4.57-8.57-8.94-13.83-13.06Z"/>
+              <circle cx="95.94" cy="92.53" r="28.19"/>
+            </g>
+            <g>
+              <polygon points="40.94 53.44 40.94 61.58 47.99 57.51 40.94 53.44 40.94 61.58 47.99 57.51 40.94 53.44"/>
+              <circle cx="38.79" cy="49.71" r="2.79"/>
+              <rect x="28.12" y="22.71" width="4.56" height="24.94" transform="translate(-13.52 19.91) rotate(-30)"/>
+            </g>
+            <g>
+              <polygon points="150.99 53.64 151.32 61.78 144.11 58 150.99 53.64 151.32 61.78 144.11 58 150.99 53.64"/>
+              <circle cx="152.99" cy="49.83" r="2.79"/>
+              <rect x="158.49" y="22.49" width="4.56" height="24.94" transform="translate(286.98 140.51) rotate(-152.36)"/>
+            </g>
+            <g>
+              <polygon points="95.74 40.9 91.67 47.95 99.81 47.95 95.74 40.9 91.67 47.95 99.81 47.95 95.74 40.9"/>
+              <circle cx="95.74" cy="36.6" r="2.79"/>
+              <rect x="93.46" y="7.35" width="4.56" height="24.94"/>
+            </g>
+          </svg>
+        </div>
+        <h1 id="printhead">Selected Color list</h1>
+        <table id="array-data" style= "border: 2px;">
+        
+          <tr>
+            <th id="th1">Hexadicimal</th>
+            <th id="th2">RGB Orignal</th>
+            <th id="th3">Deutonopie</th>
+            <th id="th4">Tritanopie</th>
+             <th id="th5">Protonopie</th>
+          </tr>
+
+        </table>
+
+        <span id="date"> </span>
+      </div>
+      <button onclick="generatePDF()" class="button-52" id="butondownload">Download PDF</button>
+      <button class="homebtn" id="homebtn">Home</button>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+      <script src="../js/transalation.js"></script>
+      <script src="../js/print.js"></script>
+      <script src="../js/result.js"></script>
+     
+</body>
+</html>
