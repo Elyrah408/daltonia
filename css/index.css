@@ -23,7 +23,22 @@ body    {
     flex-direction: column;
     justify-content: center;
 }
-
+ /* ------top buttons style------- */
+ 
+ .topbuttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 5em;
+  width: 100%;
+  justify-content: space-between;
+ }
+ .info{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-right: 2%;
+ }
 #language_select {
   background-color: var(--btn-color);
   color: black;
@@ -31,6 +46,9 @@ body    {
   font-weight: bold;
   border: solid 3px var(--contrasted-color);
   border-radius: 10px;
+  height: 4vh;
+  width: fit-content;
+  margin-top: 1em;
 }
 #language_select option{
   font-size: 12px;
@@ -200,23 +218,7 @@ body    {
   margin-top: 10px;
 }
 
-select{
-  height: 4vh;
-  width: fit-content;
-}
 
-.info{
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 95vw;;
-  top: -30px;
- }
-
- /* ------info style------- */
 
  .logoabout{
   display: flex;
@@ -268,16 +270,9 @@ select{
   text-align: justify;
 }
 
-
-@media screen  and(max-width:700px){
-
+@media (max-width: 700px) {
+  
   .info{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    left: 80%;;
-    top: 30px;
-    margin-right: 20px;
+    top: 15px;
    }
-
 }
