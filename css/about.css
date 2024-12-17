@@ -1,0 +1,60 @@
+
+
+.cgv{
+  
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+
+    
+  }
+
+  .cgv h1{
+    margin-top:  40px;
+    font-size: 1rem;
+    white-space : nowrap;
+    font-weight: 500;
+    margin-left: 15%;
+    margin-right: 15%;
+  
+  }
+  .cgv h2{
+    margin-top:  30px;
+    font-size: 0.9rem;
+    white-space : nowrap
+  
+  }
+  .cgv p{
+    margin-bottom:  12px;
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.6;
+  }
+
+  .logoabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    top:0;
+    position: fixed;
+    background: linear-gradient(to top, transparent, rgb(245, 245, 245));
+    backdrop-filter: blur(8px);
+    z-index: 100;
+  }
+  
+  .logoabout img{
+    margin-top: 120px;
+    width: 90px;
+    position: relative;
+    top: -60px;
+  }
